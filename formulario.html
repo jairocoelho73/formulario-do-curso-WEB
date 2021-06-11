@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Meu Formulário</title>
+        
+        <link href="css/estilo.css" rel="stylesheet" media="screen">
+    </head>
+
+    <body>
+        
+        <h2>Formulário</h2>
+        <form action="destino.html" method="post">
+            <label for="nome">Nome completo</label>
+            <input type="text" name="nome" id="nome" size="30" maxlength="100">
+            
+            <label for="rga">RGA</label>
+            <input type="text" name="rga" id="rga"  />
+            
+                            
+            Sexo:
+            <br />
+                Masculino: <input type="radio" name="sexo" value="Masculino" />
+                Feminino: <input type="radio" name="sexo" value="Feminino" />
+            <br />
+            
+            <fieldset>
+                <legend>Endereço</legend>
+                <br />
+                <select name="lista-cidade">
+                    <option value="1">Cuiabá</option>
+                    <option value="2">Várzea Grande</option>
+                    <option value="3">Araguaia</option>
+                    <option value="4">Sinop</option>
+                </select>
+                <textarea cols="74" rows="3" name="endereco"></textarea>
+            </fieldset>
+            <br />
+            
+            <label for="telefone">Telefone</label>
+            <input type="text" name="telefone" id="telefone" size="30" maxlength="30"> 
+            
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" required autofocus  placeholder="Insira um e-mail válido" size="30" maxlength="60">   
+            
+            <input type="text" list="faculdades" id="nome_faculdade" required autofocus  placeholder="Digite um nome  de faculdade válido" size="30" maxlength="60">  
+            
+            <datalist id="faculdades">
+                <option value="UFMT">UFMT</option>
+                <option value="Unic">Unic</option>
+                <option value="Univag">Univag</option>
+                <option value="Unirondon">Unirondon</option>
+            </datalist>
+            <div class="curso">
+            <span>Curso:</span>
+                <input type="radio" id="rd-curso-si" name="rd-curso" />
+                <label for="rd-curso-si">Sistemas de Informação</label>
+                <input type="radio" id="rd-curso-cc" name="rd-curso" />
+                <label for="rd-curso-cc">Ciências da Computação</label>
+            </div>    
+            <br/>
+            <br/>
+            <br/>
+            <input type="submit" value="Enviar" id="enviar" name="enviar">
+        </form>
+    
+    </body>
+</html>
